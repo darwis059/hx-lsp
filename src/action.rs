@@ -296,7 +296,7 @@ fn get_shell() -> Vec<String> {
 
 #[cfg(windows)]
 fn get_shell() -> Vec<String> {
-    vec!["cmd".to_owned(), "/C".to_owned()]
+    vec!["nu".to_owned(), "-c".to_owned()]
 }
 
 #[cfg(test)]
